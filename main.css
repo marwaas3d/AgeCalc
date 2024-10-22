@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+@media (max-width: 1440px) {
+    body {
+        background-color: var(--Off-white);
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .container {
+        width: 60%;
+        height: 740px;
+        background-color: var(--White);
+        border-radius: 3%;
+        border-bottom-right-radius: 21%;
+        position: relative;
+    }
+
+    .dates{
+        display: flex;
+        flex-direction: row;
+        margin-top: 70px;
+        margin-left: 70px;
+        font-weight: bold;
+        color: var(--Smokey-grey);
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+
+    p{
+        margin-right: 160px;
+    }
+
+    .inputs{
+        margin-left: 70px;
+    }
+    input{
+        height: 75px;
+        border: 1px solid var(--Light-grey);
+        outline: none;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-size: 30px;
+        caret-color: var(--Purple);
+        cursor: pointer;
+        padding-left: 15px;
+        font-weight: 900;
+    }
+    .day{
+        width: 150px;
+    }
+    .month{
+        width: 150px;
+        margin-left: 40px;
+    }
+    .year{
+        width: 160px;
+        margin-left: 40px;
+    }
+    .year-p{
+        margin-left: -25px;
+    }
+
+    input::placeholder {
+        color: var(--Smokey-grey);
+        font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+        left: 15px;
+        top: 18px;
+    }
+    
+    .line{
+        width: 78%;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+
+    .line hr{
+        border: none; 
+        height: 2px; 
+        background-color: var(--Light-grey); 
+    }
+
+    .circle{
+        background-color: var(--Purple);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        position: absolute;
+        right: 60px;
+        top: 195px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .circle:hover{
+        background-color: var(--Off-black);
+    }
+    
+    .circle::after{
+        content: url(./assets/images/icon-arrow.svg);
+        position: absolute;
+        right: 22px;
+        top: 21px;
+    }
+
+    .target{
+        font-size: 106px;
+        font-weight: 900;
+        margin-left: 70px;
+        margin-top: 20px;
+        line-height:138px;
+        font-style: italic;
+    }
+
+    span{
+        color: var(--Purple);
+    }
+
+    .req{
+        color: var(--Light-red);
+        margin-left: 70px;
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 12px;
+    }
+
+    .reqDay {
+        display:none;
+        position: absolute;
+        left: 72px;
+    }
+
+    .reqMonth {
+        position: absolute;
+        left: 265px;
+        display: none;
+    }
+
+    .reqYear {
+        position: absolute;
+        right: 99px;
+        display: none;
+    }
+
+    .must{
+        color: var(--Light-red);
+        margin-left: 70px;
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 12px;
+    }
+    .mustDay {
+        display:none;
+        position: absolute;
+        left: 72px;
+    }
+
+    .mustMonth {
+        position: absolute;
+        left: 265px;
+        display: none;
+    }
+
+    .mustYear {
+        position: absolute;
+        right: 99px;
+        display: none;
+    }
+    
+    }
+
+
+    @media(max-width:375px){        
+        .container {
+            width: 94%;
+            height: 472px;
+            border-radius: 6%;
+            border-bottom-right-radius: 29%;
+            margin-top: -183px;
+        }
+
+        
+        .dates{
+            margin-top: 44px;
+            margin-left: 34px;
+            letter-spacing: 2px;
+            font-size: 12px;
+        }
+    
+        p{
+            margin-right: 56px;
+        }
+
+        .year-p{
+            margin-left: -10px;
+        }
+
+
+        
+    .inputs{
+        margin-left: 30px;
+    }
+    input{
+        height: 55px;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-size: 18px;
+        padding-left: 15px;
+        font-weight: 900;
+    }
+    .day{
+        width: 80px;    
+    }
+    .month{
+        width: 80px;
+        margin-left: 8px;
+    }
+    .year{
+        width: 80px;
+        margin-left: 17px;
+    }
+
+    
+    input::placeholder {
+        left: 13px;
+        top: 17px;
+        font-size: 18px;
+    }
+    
+    .line{
+        width: 85%;
+        margin-left: 25px;
+        margin-top: 65px;
+    }
+
+    .line hr{
+        height: 1px; 
+    }
+
+    
+    .circle{
+        width: 60px;
+        height: 60px;
+        right: 42%;
+        top: 162px;
+    }
+
+    .circle:hover{
+        background-color: var(--Off-black);
+    }
+    
+    .circle::after{
+        right: 7px;
+        top: 7px;
+        transform:scale(.6);
+    }
+
+    .target{
+        font-size: 46px;
+        margin-left: 30px;
+        margin-top: 54px;
+        line-height: 56px;
+        width: 369px;
+    }
+
+    span{
+        color: var(--Purple);
+    }
+
+    
+    .req{
+        font-size: 8px;
+    }
+
+    .reqDay {
+        left: 32px;
+    }
+
+    .reqMonth {
+        left: 125px;
+    }
+
+    .reqYear {
+        right: -29px;
+    }
+
+
+    
+    .must{
+        font-size: 8px;
+    }
+    .mustDay {
+        left: 31px;
+    }
+
+    .mustMonth {
+        left: 124px;
+    }
+
+    .mustYear {
+        right: -27px;
+    }
+
+    }
