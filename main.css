@@ -102,12 +102,12 @@
 
     .circle{
         background-color: var(--Purple);
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
         border-radius: 50%;
         position: absolute;
         right: 60px;
-        top: 195px;
+        top: 202px;
         border: none;
         cursor: pointer;
     }
@@ -119,8 +119,8 @@
     .circle::after{
         content: url(./assets/images/icon-arrow.svg);
         position: absolute;
-        right: 22px;
-        top: 21px;
+        right: 25px;
+        top: 22px;
     }
 
     .target{
