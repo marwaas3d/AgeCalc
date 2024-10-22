@@ -27,7 +27,7 @@
     
     .container {
         width: 60%;
-        height: 740px;
+        height: 700px;
         background-color: var(--White);
         border-radius: 3%;
         border-bottom-right-radius: 21%;
@@ -124,11 +124,11 @@
     }
 
     .target{
-        font-size: 106px;
+        font-size: 96px;
         font-weight: 900;
         margin-left: 70px;
-        margin-top: 20px;
-        line-height:138px;
+        margin-top: 8px;
+        line-height: 138px;
         font-style: italic;
     }
 
